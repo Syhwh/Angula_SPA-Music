@@ -12,8 +12,9 @@ private musicians: Musician [] = [
         bornPlace: 'Getreidegasse, Salzburg, Austria',
         died: 'December 5, 1791' ,
         diedPlace: 'Vienna, Austria',
-        quote: 'Neither a lofty degree of intelligence nor imagination nor both together go to the making of genius. Love, love, love, that is the soul of genius.'
-      },
+        quote: 'Neither a lofty degree of intelligence nor imagination nor both together go to the making of genius. Love, love, love, that is the soul of genius.',
+        link: 'https://en.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart'
+        },
 {
         name: 'Ludwig van Beethoven',
         bio: 'Ludwig van Beethoven was a German composer and pianist. A crucial figure in the transition between the Classical and Romantic eras in Classical music, he remains one of the most recognised and influential of all composers.',
@@ -22,8 +23,9 @@ private musicians: Musician [] = [
         bornPlace: 'Bonn, Germany',
         died: 'March 26, 1827',
         diedPlace: 'Vienna, Austria',
-        quote: 'Music is a higher revelation than philosophy.'
-        },
+        quote: 'Music is a higher revelation than philosophy.',
+        link: 'https://en.wikipedia.org/wiki/Ludwig_van_Beethoven'
+    },
 {
         name: 'Johann Sebastian Bach',
         bio: 'Johann Sebastian Bach was a German composer and musician of the Baroque period. He is known for instrumental compositions such as the Brandenburg Concertos and the Goldberg Variations as well as for vocal music such as the St Matthew Passion and the Mass in B minor.',
@@ -32,8 +34,9 @@ private musicians: Musician [] = [
         bornPlace: 'Eisenach, Germany',
         died: 'July 28, 1750',
         diedPlace: 'Leipzig, Germany',
-        quote: 'The aim and final end of all music should be none other than the glory of God and the refreshment of the soul.'
-      },
+        quote: 'The aim and final end of all music should be none other than the glory of God and the refreshment of the soul.',
+        link: 'https://en.wikipedia.org/wiki/Johann_Sebastian_Bach'
+    },
 {
         name: 'Frédéric François Chopin',
         bio: 'Frédéric François Chopin was a Polish composer and virtuoso pianist of the Romantic era who wrote primarily for solo piano. He has maintained worldwide renown as a leading musician of his era, one whose poetic genius was based on a professional technique that was without equal in his generation.',
@@ -43,7 +46,7 @@ private musicians: Musician [] = [
         died: 'October 17, 1849',
         diedPlace: 'Paris, France',
         quote: 'Simplicity is the final achievement. After one has played a vast quantity of notes and more notes, it is simplicity that emerges as the crowning reward of art.',
-        // link: 'https://en.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Chopin'
+        link: 'https://en.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Chopin'
       },
     ];
 
@@ -55,6 +58,29 @@ constructor() {
 getMusicias( ) {
     return this.musicians;
 }
+
+getMusician(idx: string) {
+return this.musicians[idx];
+}
+
+searchMusicians (text: string): Musician [] {
+    let musiciansArr: Musician[] = [];
+    text = text.toLowerCase();
+
+    for (let i = 0; i < this.musicians.length; i++) {
+
+        let musician = this.musicians[i];
+        let name = musician.name.toLowerCase();
+
+        if (name.indexOf(text) >= 0) {
+            musician.idx = i;
+            musiciansArr.push(musician);
+        }
+    }
+        return musiciansArr;
+
+
+}
 }
 export interface Musician {
     name: string;
@@ -65,4 +91,6 @@ export interface Musician {
     died: string;
     diedPlace: string;
     quote: string;
+    link: string;
+    idx?: number;
   }

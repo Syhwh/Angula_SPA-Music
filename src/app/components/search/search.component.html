@@ -1,0 +1,18 @@
+<div class="main-container">
+<h1 class="animated fadeIn">Searching: <small> "{{term}}"</small> </h1>
+<hr>
+
+<div class="row" *ngIf="musicians.length==0">
+  <div class="col-md-12">
+    <div class="alert alert-info" role="alert">
+      There are no results that match your search with "{{term}}"
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+<div class="card-columns ">
+<app-musician-card [musician]='musician' [index]="musician.idx" *ngFor="let musician of musicians; let i = index"></app-musician-card>
+</div>
+</div></div>

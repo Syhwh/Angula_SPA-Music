@@ -1,3 +1,36 @@
-<p>
-  musician works!
+<div class="main-container animated fadeIn ">
+<h1> {{musician.name}}  </h1>
+<hr>
+<div class="row animated fadeIn fast">
+<div class="col-md-4">
+ <img class="composerPic" [src]="musician.img" [alt]="musician.name">
+<br><br>
+<a [routerLink]="['/musicians']" routerLinkActive="router-link-active"  class="btn btn-outline-danger btn-block">
+  Back
+</a>
+</div>
+<div class="col-md-8">
+
+<h3> {{musician.name}}</h3>
+<hr>
+<h4>  <small class="text-muted"> {{musician.born}} {{musician.bornPlace}}  </small> 
+  <strong> - </strong> <small class="text-muted"> {{musician.died}}  {{musician.diedPlace}}  </small></h4>
+<p> {{musician.bio}} 
 </p>
+
+<div class="card">
+  
+  <div class="card-body">
+    <blockquote class="blockquote mb-0">
+      <p> {{musician.quote}}  </p>
+      <footer> <span class=" blockquote-footer float-right"> {{musician.name}} </span> </footer>
+    </blockquote>
+  </div>
+</div>
+<br>
+<a [href]="musician.link " target="blank" class="btn btn-primary float-right">Even More</a>
+
+</div>
+
+</div>
+</div>

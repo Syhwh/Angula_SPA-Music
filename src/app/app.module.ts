@@ -11,6 +11,9 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { MusiciansComponent } from './components/musicians/musicians.component';
 import { MusicianComponent } from './components/musician/musician.component';
+import { FooterComponent } from './components/shared/footer/footer.component';
+import { SearchComponent } from './components/search/search.component';
+import { MusicianCardComponent } from './components/musician-card/musician-card.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { MusicianComponent } from './components/musician/musician.component';
     HomeComponent,
     AboutComponent,
     MusiciansComponent,
-    MusicianComponent
+    MusicianComponent,
+    FooterComponent,
+    SearchComponent,
+    MusicianCardComponent
   ],
   imports: [
     BrowserModule,

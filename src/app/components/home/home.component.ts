@@ -20,9 +20,8 @@ export class HomeComponent implements OnInit {
     this.musicians = this._musiciansService.getMusicias();
   }
 
-moreMusician(idx: number) {
-  console.log(idx);
-  this._router.navigate(['/musician', idx]);
-}
-
+  moreMusician(idx: number) {
+    console.log(idx);
+    this._router.navigate(['/musician', idx]);
+  }
 }

@@ -20,7 +20,7 @@ export class MusiciansComponent implements OnInit {
   }
 
 moreMusician(idx: number) {
-  console.log(idx);
+
   this._router.navigate(['/musician', idx]);
 }
 
