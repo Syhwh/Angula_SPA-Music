@@ -2,11 +2,21 @@
 
 This is a Single Page Application developed using angular.
 
-In this project the are:
+In this project I have used:
 Components
 Services
 Routes
 Search functionality
+Boostrap 4 (CND)
+
+## Home
+![angular_spa_musicians_home](https://user-images.githubusercontent.com/35041156/47050697-f1e53580-d166-11e8-883a-be18985f4595.png)
+
+## Musicians Info page
+
+![angular_spa_musicians_musicians](https://user-images.githubusercontent.com/35041156/47050696-f1e53580-d166-11e8-8055-446f98c56387.png)
+## Search results
+![angular_spa_musicians_search](https://user-images.githubusercontent.com/35041156/47050695-f1e53580-d166-11e8-8a8a-06035356f9de.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3.
 
@@ -34,6 +44,5 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-![angular_spa_musicians_search](https://user-images.githubusercontent.com/35041156/47050695-f1e53580-d166-11e8-8a8a-06035356f9de.png)
-![angular_spa_musicians_musicians](https://user-images.githubusercontent.com/35041156/47050696-f1e53580-d166-11e8-8055-446f98c56387.png)
-![angular_spa_musicians_home](https://user-images.githubusercontent.com/35041156/47050697-f1e53580-d166-11e8-883a-be18985f4595.png)
+
+
