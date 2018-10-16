@@ -1,0 +1,90 @@
+<div class="jumbotron jumbotron-fluid main-container">
+  <div class="container">
+    <h1 class="display-4">Classical Composers</h1>
+    <p class="lead">The best classical composers and musicians</p>
+  </div>
+</div>
+
+
+
+<!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+          <img class="rounded-circle" src={{musicians[0].img}} alt={{musicians[0].name}} width="150" height="160">
+            <h2>{{musicians[0].name}}</h2>
+            <p>{{musicians[0].bio}}</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src={{musicians[1].img}} alt={{musicians[1].name}} width="150" height="160">
+              <h2>{{musicians[1].name}}</h2>
+              <p>{{musicians[1].bio}}</p>
+              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img class="rounded-circle" src={{musicians[2].img}} alt={{musicians[2].name}} width="150" height="160">
+                <h2>{{musicians[2].name}}</h2>
+                <p>{{musicians[2].bio}}</p>
+                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+              </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">"{{musicians[0].quote}}"<span class="text-muted"> {{musicians[0].name}}</span></h2>
+            <p class="lead">{{musicians[0].born}} - {{musicians[0].died}}</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src={{musicians[0].img}} alt={{musicians[0].name}} width="150" height="160">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">"{{musicians[1].quote}}" <span class="text-muted"> {{musicians[1].name}}</span></h2>
+            <p class="lead"> {{musicians[1].born}} - {{musicians[1].died}} </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" data-src={{musicians[1].img}} alt={{musicians[1].name}} width="150" height="160">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">"{{musicians[2].quote}}"<span class="text-muted"> {{musicians[2].name}}</span></h2>
+            <p class="lead">{{musicians[2].born}} - {{musicians[2].died}}</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src={{musicians[2].img}} alt={{musicians[2].name}} width="150" height="160">
+          </div>
+        </div>
+
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+
+      </div><!-- /.container -->
+
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2017-2018 My Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+  
