@@ -1,4 +1,4 @@
-# SPAMusic
+# SPA-Music
 
 This is a Single Page Application developed using angular.
 
@@ -7,7 +7,7 @@ Components
 Services
 Routes
 Search functionality
-Boostrap 4 (CND)
+Bootstrap 4 (CND)
 
 ## Home
 ![angular_spa_musicians_home](https://user-images.githubusercontent.com/35041156/47050697-f1e53580-d166-11e8-883a-be18985f4595.png)
